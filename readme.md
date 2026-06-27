@@ -12,14 +12,14 @@ chmod 777 cpu_stress_arm64
 ## 快速开始
 
 ```bash
-# 跑满所有核，持续 1 分钟（默认）
-./cpu_stress
+# 跑满所有核，持续 1 分钟,快速冒烟
+./cpu_stress_arm64
 
 # 压测 10 分钟
-./cpu_stress -t 10m
+./cpu_stress_arm64 -t 10m
 
 # 持续运行直到手动 Ctrl+C 停止
-./cpu_stress -t 0
+./cpu_stress_arm64 -t 0
 ```
 
 ## 参数
@@ -64,16 +64,16 @@ CPU Stress Test
 
 ```bash
 # 只用 4 个核压测 30 分钟
-./cpu_stress -workers 4 -t 30m
+./cpu_stress_arm64 -workers 4 -t 30m
 
 # 专项浮点压测，每 5 秒刷新一次
-./cpu_stress -mode float -interval 5s
+./cpu_stress_arm64 -mode float -interval 5s
 
 # 内存带宽压测，不限时长
-./cpu_stress -mode memory -t 0
+./cpu_stress_arm64 -mode memory -t 0
 
 # 快速冒烟，跑 10 秒看看有没有崩溃
-./cpu_stress -t 10s
+./cpu_stress_arm64 -t 10s
 ```
 
 ## 停止
