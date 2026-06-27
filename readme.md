@@ -4,7 +4,8 @@
 
 ## 下载
 ```
-wget 
+wget  https://github.com/cn4096/cpu_stress/raw/refs/heads/main/cpu_stress_arm64
+chmod 777 cpu_stress_arm64
 ```
 ## 快速开始
 
